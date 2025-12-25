@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Para o Amor da Minha Vida</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- CORAÇÕES -->
+<div id="hearts"></div>
+
+<!-- ABERTURA -->
+<section class="intro" id="intro">
+  <h1>💙 Nosso dia 26 💙</h1>
+  <p>Um pedacinho do nosso dia 26</p>
+  <button onclick="entrar()">aperta o play Meu Benzinho</button>
+</section>
+
+<!-- ÁUDIO -->
+<audio id="musica" src="musica/lied to (3).mp3" loop></audio>
+
+<!-- CONTEÚDO -->
+<section class="conteudo" id="conteudo">
+  <h2>Oi, meu amor 🌊</h2>
+  <p>esse é um site que que eu fiz pra você</p></p>
+
+  <div class="botoes">
+    <button onclick="abrirCarta()">💌 Carta</button>
+    <button onclick="abrirFotos()">📸 Fotos</button>
+    <button onclick="tocarMusica()">🎵 Música</button>
+  </div>
+
+  <!-- CARTA -->
+  <div class="carta" id="carta">
+    <div class="carta-inner">
+      <h3>leia com amor e carinho</h3>
+      <p>
+       Oi Meu Amor, hoje está fazendo 9 meses que a gente de conheceu. 
+
+E eu não poderia deixar passar sem te dizer o quanto  você é importante pra mim.  
+
+Aquele 26 de março eu estava com muita vergonha, eu não sabia o que fazer e nem dizer kkk mas eu te convidei pra se sentar no chão comigo kkkk quem que convida uma pessoa pra sentar no chão? KKK mas aconteceu, eu com minhas loucuras e você doida igual, foi dando certo aos pouquinhos (que no caso foi mais rápido que um carro de F1 kkk desculpa) eu não sei se poderia ta dizendo isso.. Mas... de verdade mesmo, as vezes quando você fica um pouco em dias de silêncio, eu fico um pouco com medo, eu tenho medo de que um dia você possa enjoar de mim. 
+
+Mas isso é só bobeira minha mesmo.  
+
+Mas voltando ao que importa, te amar me deixou mais feliz, me deu uma forcinha a mais pra querer viver, eu acho que fiquei até mais organizado kkk quando estamos juntos eu me sinto muito leve, é uma sensação maravilhosa. Eu sei que as vezes sou meio depressivo, e te deixe “louca”, me desculpa por isso. Você é toda minha felicidade, você é a melhor parte do meu dia. Eu te amooo e sempre vou te amar.  
+
+Bjs do seu Victor.   💙
+      </p>
+    </div>
+  </div>
+
+  <!-- GALERIA -->
+  <div class="galeria" id="galeria">
+    <img src="imagens/IMG-20251113-WA0707.jpg" onclick="zoom(this)">
+    <figcaption>o primeiro evento que a gente foi juntos 🤍</figcaption>
+    <img src="imagens/IMG-20251209-WA0552.jpg" onclick="zoom(this)">
+    <figcaption>eu deitadinho no seus braços 🥰</figcaption>
+    <img src="imagens/IMG_20251112_200957_279.webp" onclick="zoom(this)">
+    <figcaption>você toda fofinha 😊 </figcaption>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="fecharZoom()">
+  <img id="lightbox-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

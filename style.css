@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(180deg, #006994, #00b4d8);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ABERTURA */
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 2s;
+}
+
+.intro h1 {
+  font-size: 3em;
+}
+
+.intro p {
+  margin: 15px 0;
+}
+
+.intro button {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 40px;
+  background: #48cae4;
+  color: #003049;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.intro button:hover {
+  transform: scale(1.15);
+}
+
+/* CONTEÚDO */
+.conteudo {
+  display: none;
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeUp 1.5s;
+}
+
+.botoes button {
+  margin: 15px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  border: none;
+  background: #90dbf4;
+  color: #003049;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botoes button:hover {
+  background: #caf0f8;
+}
+
+/* CARTA 3D */
+.carta {
+  display: none;
+  perspective: 1000px;
+  margin-top: 30px;
+}
+
+.carta-inner {
+  background: rgba(255,255,255,0.15);
+  padding: 30px;
+  border-radius: 20px;
+  transform: rotateY(180deg);
+  animation: abrirCarta 1s forwards;
+}
+
+/* GALERIA */
+.galeria {
+  display: none;
+  margin-top: 30px;
+}
+
+.galeria img {
+  width: 220px;
+  margin: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.galeria img:hover {
+  transform: scale(1.1);
+}
+
+/* LIGHTBOX */
+#lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  border-radius: 20px;
+}
+
+/* CORAÇÕES */
+#hearts span {
+  position: fixed;
+  bottom: -10px;
+  color: #90dbf4;
+  font-size: 20px;
+  animation: subir linear infinite;
+}
+
+@keyframes subir {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-110vh); opacity: 0; }
+}
+
+@keyframes abrirCarta {
+  to { transform: rotateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
